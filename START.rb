@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # This is an example, Ruby-only workflow that serves as a Proof of Concept
+# https://iubenda.quip.com/KwGAA6radr29/Radar-v2-Backend-Ideas-WIP
 #
 # The `json` folder contains examples of input data that this workflow will receive
 # The `rules` folder containes versioned rules YAML files with the concorded syntax
