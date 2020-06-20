@@ -29,7 +29,9 @@ require_relative 'rules_processor'
   data         = RulesExtractor.new(filename).parse
   passed_rules = RulesProcessor.new(1, data).call
 
-  puts filename
-  puts passed_rules.join("\n")
-  puts
+  puts <<~OUTPUT
+    === #{filename} ===
+    #{passed_rules.join("\n")}
+
+  OUTPUT
 end
