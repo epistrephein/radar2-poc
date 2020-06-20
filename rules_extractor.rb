@@ -5,6 +5,9 @@ class RulesExtractor
   include DocumentsExtractorHelper
   include FormsExtractorHelper
 
+  include EcommerceComposerHelper
+  include MiscComposerHelper
+
   attr_reader :json
 
   def initialize(json)
@@ -12,14 +15,11 @@ class RulesExtractor
   end
 
   def parse
-    {
-      has_tc: has_tc?,
-      has_cons: has_cons?,
-      has_forms_without_pp: has_forms_without_pp?,
-      forms_without_pp: forms_without_pp,
-      has_shopify: has_shopify?,
-      has_woo_commerce: has_woo_commerce?,
-      has_ecommerce: has_ecommerce?
-    }
+    composers = [
+      ecommerce_values,
+      misc_values
+    ]
+
+    composers.reduce(&:merge)
   end
 end
