@@ -1,0 +1,9 @@
+{
+  "cms": "Shopify",
+  "tc": false,
+  "cons": false,
+  "forms_without_pp": [
+    "http://example.org/form1",
+    "http://example.org/form2"
+  ]
+}

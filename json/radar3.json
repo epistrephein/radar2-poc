@@ -1,0 +1,8 @@
+{
+  "cms": "WooCommerce",
+  "tc": true,
+  "cons": false,
+  "forms_without_pp": [
+    "http://example.org/form1"
+  ]
+}

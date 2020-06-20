@@ -1,0 +1,13 @@
+---
+questionnaire_version: 2
+grading_version: 1
+rules:
+  suggest_adding_pp_checkbox_to_forms:
+    and:
+      has_forms_without_pp: true
+  suggest_tc_for_cms:
+    or:
+      has_shopify: true
+      has_woo_commerce: true
+    and:
+      has_tc: false
