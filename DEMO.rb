@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 # frozen_string_literal: true
 
 # This is an example, Ruby-only workflow that serves as a Proof of Concept
