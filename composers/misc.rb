@@ -5,8 +5,7 @@ module MiscComposerHelper
     {
       has_tc: has_tc?,
       has_cons: has_cons?,
-      has_forms_without_pp: has_forms_without_pp?,
-      forms_without_pp: forms_without_pp
+      has_forms_without_pp: has_forms_without_pp?
     }
   end
 end
